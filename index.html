@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bases de datos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Modelo relacional, SQL que se ejecuta en el navegador, diseño y normalización, índices, planes de ejecución, transacciones, aislamiento y bases NoSQL, de la primera consulta a lo que pasa dentro del motor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Bases de <b>datos</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Pregúntale a tus datos, y mira al motor responder por dentro</h1>
+  <p class="lede">Casi toda la información de una empresa, de las ventas a la nómina, vive en una base de datos, y casi siempre se le habla en SQL. Este curso empieza con la primera consulta, escrita y ejecutada en el navegador, y termina dentro del motor: cómo elige un plan, para qué sirve un índice y qué pasa cuando dos personas cambian el mismo dato a la vez. Cada capítulo trae una base de datos viva para probar.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para cualquier profesional que trabaja con datos y quiere dejar de depender de otro para sacar un reporte, y para estudiantes de computación y desarrolladores que necesitan el diseño, los índices y las transacciones a fondo. Los capítulos 1 a 6 no piden saber programar; los de la parte 3 llegan a la profundidad de un curso universitario. El ORM y las migraciones desde el código están en Backend y APIs; las bases distribuidas y el consenso, en Sistemas distribuidos; el *data warehouse*, en Ingeniería de datos.</p>
+    <p><b>Cómo está hecho.</b> Una cadena de cafeterías recorre el curso: sucursales, productos, clientes, pedidos y empleados. Primero se consulta una base ya hecha; después se diseña de nuevo, se normaliza, se le ponen índices y se pone bajo carga con cientos de pedidos a la vez, y al final una parte se lleva a un almacén de documentos. Todo el SQL se ejecuta en el navegador sobre SQLite y PostgreSQL compilados a WebAssembly, sin instalar nada; cada idea empieza con una analogía y luego se nombra con su término técnico.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Preguntarle a los datos</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="por-que-una-base-de-datos"><span class="n">01</span><b>De la hoja de cálculo a la base de datos</b><p>Qué problemas resuelve un sistema gestor de bases de datos que una hoja de cálculo no resuelve, y una historia breve de cómo llegamos aquí.</p></div>
+    <div class="mod soon" data-id="modelo-relacional"><span class="n">02</span><b>El modelo relacional y el álgebra relacional</b><p>Relaciones, tuplas, atributos y claves, la integridad referencial y las operaciones del álgebra relacional que hay debajo de cada consulta.</p></div>
+    <div class="mod soon" data-id="consultas-sql"><span class="n">03</span><b>Primeras consultas en SQL</b><p>SELECT, WHERE, ORDER BY y LIMIT, expresiones, fechas y textos, y la lógica de tres valores de NULL.</p></div>
+    <div class="mod soon" data-id="reunir-y-agrupar"><span class="n">04</span><b>Reunir tablas y agrupar</b><p>Las reuniones internas y externas, los agregados con GROUP BY y HAVING, y las subconsultas.</p></div>
+    <div class="mod soon" data-id="sql-avanzado"><span class="n">05</span><b>SQL avanzado: CTE, ventanas y recursión</b><p>Expresiones de tabla comunes, consultas recursivas, funciones de ventana, operaciones de conjuntos, vistas y JSON.</p></div>
+    <div class="mod soon" data-id="definir-y-modificar"><span class="n">06</span><b>Definir el esquema y modificar los datos</b><p>CREATE TABLE, tipos y restricciones, INSERT, UPDATE y DELETE, permisos, procedimientos y disparadores.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Diseñar</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="modelo-entidad-relacion"><span class="n">07</span><b>Modelar con entidades y relaciones</b><p>Entidades, atributos, relaciones y cardinalidades, el diagrama entidad-relación y cómo se convierte en tablas.</p></div>
+    <div class="mod soon" data-id="normalizacion"><span class="n">08</span><b>Dependencias funcionales y normalización</b><p>Anomalías, dependencias funcionales, axiomas de Armstrong, las formas normales hasta la de Boyce-Codd y la cuarta, y cuándo desnormalizar.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Dentro del motor</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="almacenamiento-e-indices"><span class="n">09</span><b>Almacenamiento e índices</b><p>Páginas y archivos, el árbol B+, índices hash, compuestos, de cobertura y parciales, y lo que cuesta mantenerlos.</p></div>
+    <div class="mod soon" data-id="ejecucion-de-consultas"><span class="n">10</span><b>Cómo se ejecuta una consulta</b><p>Del texto al plan: análisis, álgebra, algoritmos de reunión, el optimizador por costos y cómo leer un EXPLAIN.</p></div>
+    <div class="mod soon" data-id="transacciones-y-recuperacion"><span class="n">11</span><b>Transacciones y recuperación ante fallas</b><p>ACID, el registro de escritura anticipada, puntos de control, el algoritmo ARIES y las copias de seguridad.</p></div>
+    <div class="mod soon" data-id="concurrencia-y-aislamiento"><span class="n">12</span><b>Concurrencia y niveles de aislamiento</b><p>Anomalías de concurrencia, los niveles de aislamiento, el bloqueo en dos fases, MVCC, aislamiento de instantánea y serializable.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Más allá de lo relacional</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="bases-nosql"><span class="n">13</span><b>Bases NoSQL y cómo modelar para ellas</b><p>Documentos, clave-valor, columnas anchas y grafos: qué resuelve cada familia y por qué se modela a partir de las consultas.</p></div>
+    <div class="mod soon" data-id="prompts-bases-de-datos-produccion"><span class="n">14</span><b>Prompts para diseñar y operar una base de datos de producción</b><p>Qué pedirle a un asistente de IA para que el esquema, las consultas y las migraciones que genera sean correctos, rápidos y seguros de aplicar.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/bases-de-datos" target="_blank" rel="noopener">github.com/aaramirez/bases-de-datos</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
